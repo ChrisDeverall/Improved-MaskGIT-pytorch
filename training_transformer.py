@@ -36,6 +36,7 @@ class TrainTransformer:
         self.train(args)
 
     def train(self, args):
+        print("testing new config")
         train_dataset = load_data(args)
         len_train_dataset = len(train_dataset)
         step = args.start_from_epoch * len_train_dataset
